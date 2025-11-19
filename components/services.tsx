@@ -52,7 +52,7 @@ export function Services() {
                 }}
               >
                 {/* Neobrutalist Card */}
-                <div className="bg-background border-4 border-foreground shadow-[6px_6px_0px_0px_rgba(255,255,255,1)] hover:shadow-[10px_10px_0px_0px_rgba(255,255,255,1)] hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-300 p-8 h-full">
+                <div className="bg-background border-4 border-foreground shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] hover:shadow-[10px_10px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-300 p-8 h-full">
                   {/* Icon */}
                   <div className="mb-6">
                     <div className="inline-flex p-4 border-4 border-foreground bg-primary">
