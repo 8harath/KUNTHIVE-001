@@ -2,9 +2,9 @@
 
 import Link from "next/link";
 import { GL } from "./gl";
-import { Pill } from "./pill";
 import { Button } from "./ui/button";
 import { useState } from "react";
+import { ChevronDown } from "lucide-react";
 
 export function Hero() {
   const [hovering, setHovering] = useState(false);
@@ -12,35 +12,47 @@ export function Hero() {
     <div className="flex flex-col h-svh justify-between">
       <GL hovering={hovering} />
 
-      <div className="pb-16 mt-auto text-center relative">
-        <Pill className="mb-6">BETA RELEASE</Pill>
-        <h1 className="text-5xl sm:text-6xl md:text-7xl font-sentient">
-          Unlock your <br />
-          <i className="font-light">future</i> growth
-        </h1>
-        <p className="font-mono text-sm sm:text-base text-foreground/60 text-balance mt-8 max-w-[440px] mx-auto">
-          Through perpetual investment strategies that outperform the market
+      <div className="pb-16 mt-auto text-center relative container">
+        <p className="font-mono text-xs sm:text-sm text-foreground/60 mb-6 tracking-wide">
+          AI/ML DEVELOPER | UNDERGRADUATE STUDENT | BUILDING MODERN WEB SOLUTIONS
         </p>
 
-        <Link className="contents max-sm:hidden" href="/#contact">
-          <Button
-            className="mt-14"
-            onMouseEnter={() => setHovering(true)}
-            onMouseLeave={() => setHovering(false)}
-          >
-            [Contact Us]
-          </Button>
-        </Link>
-        <Link className="contents sm:hidden" href="/#contact">
-          <Button
-            size="sm"
-            className="mt-14"
-            onMouseEnter={() => setHovering(true)}
-            onMouseLeave={() => setHovering(false)}
-          >
-            [Contact Us]
-          </Button>
-        </Link>
+        <h1 className="text-5xl sm:text-6xl md:text-8xl font-sentient font-extralight leading-tight">
+          Web Developer <br />
+          <span className="text-foreground/80">&</span> <i className="font-light">Designer</i>
+        </h1>
+
+        <p className="font-mono text-sm sm:text-base md:text-lg text-foreground/70 text-balance mt-8 max-w-[600px] mx-auto">
+          Crafting unique digital experiences with clean code and creative design
+        </p>
+
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-12">
+          <Link className="contents max-sm:w-full" href="#projects">
+            <Button
+              size="lg"
+              className="max-sm:w-full"
+              onMouseEnter={() => setHovering(true)}
+              onMouseLeave={() => setHovering(false)}
+            >
+              [View Projects]
+            </Button>
+          </Link>
+          <Link className="contents max-sm:w-full" href="#contact">
+            <Button
+              size="lg"
+              variant="outline"
+              className="max-sm:w-full"
+              onMouseEnter={() => setHovering(true)}
+              onMouseLeave={() => setHovering(false)}
+            >
+              [Get in Touch]
+            </Button>
+          </Link>
+        </div>
+      </div>
+
+      <div className="pb-8 flex justify-center animate-bounce">
+        <ChevronDown className="text-foreground/40" size={32} />
       </div>
     </div>
   );
