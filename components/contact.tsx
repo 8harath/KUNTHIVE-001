@@ -47,7 +47,7 @@ export function Contact() {
 
         {/* Contact Card */}
         <div className="max-w-3xl mx-auto">
-          <div className="bg-background border-4 border-foreground shadow-[12px_12px_0px_0px_rgba(255,255,255,1)] p-8 md:p-12">
+          <div className="bg-background border-4 border-foreground shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] p-8 md:p-12">
             {/* CTA Text */}
             <div className="text-center mb-10">
               <h3 className="font-sentient text-3xl md:text-4xl font-bold mb-4">

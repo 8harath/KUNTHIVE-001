@@ -39,7 +39,7 @@ export function Projects() {
                 ${
                   activeCategory === category.id
                     ? "bg-foreground text-background translate-x-0.5 translate-y-0.5 shadow-none"
-                    : "bg-background text-foreground hover:translate-x-0.5 hover:translate-y-0.5 shadow-[4px_4px_0px_0px_rgba(255,255,255,1)] hover:shadow-none"
+                    : "bg-background text-foreground hover:translate-x-0.5 hover:translate-y-0.5 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none"
                 }
               `}
             >
@@ -59,7 +59,7 @@ export function Projects() {
               }}
             >
               {/* Neobrutalist Card */}
-              <div className="bg-background border-4 border-foreground shadow-[8px_8px_0px_0px_rgba(255,255,255,1)] hover:shadow-[12px_12px_0px_0px_rgba(255,255,255,1)] hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-300 h-full flex flex-col">
+              <div className="bg-background border-4 border-foreground shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[-4px] hover:translate-y-[-4px] transition-all duration-300 h-full flex flex-col">
                 {/* Project Image Placeholder */}
                 <div className="relative w-full aspect-video bg-foreground/5 border-b-4 border-foreground overflow-hidden">
                   <div className="absolute inset-0 flex items-center justify-center font-mono text-6xl font-bold text-foreground/10">

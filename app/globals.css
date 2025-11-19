@@ -17,11 +17,11 @@
 }
 
 :root {
-  --background: #000000;
-  --foreground: #ffffff;
+  --background: #ffffff;
+  --foreground: #000000;
   --primary: #FFC700;
-  --primary-foreground: #ffffff;
-  --border: #424242;
+  --primary-foreground: #000000;
+  --border: #e0e0e0;
 }
 
 @utility container {
